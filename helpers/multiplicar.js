@@ -22,7 +22,7 @@ const crearArchivo = async( base = 5 , list = false, hasta =10) =>{
         }
         //si sucede error hay que usar try-catch
     
-        fs.writeFileSync(`tabla-${base}.txt`, salida);
+        fs.writeFileSync(`./salida/tabla-${base}.txt`, salida);
         return `tabla-${base}.txt`;
         
     } catch (error) {
